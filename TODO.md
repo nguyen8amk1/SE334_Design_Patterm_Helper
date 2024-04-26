@@ -1,5 +1,8 @@
 # TODO
 + Able to get the graph data [] @Current
+    -> Try to work with the reactflow library 
+        -> onConnect event 
+
 + Suggest design pattern that fits the relation -> Popup list []
     -> Using (fuzzy) graph matching algorithm to search for
         + Turn graph to string 
