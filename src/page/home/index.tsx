@@ -64,14 +64,6 @@ function Home() {
                 return addEdge(params, eds)
             })
         },
-        // (params: Connection) => {
-        //     //console.log("params: ", params)
-        //     setEdges((eds) => {
-        //         //console.log("eds", eds);
-        //         addEdge(params, eds);
-        //     })
-        // },
-        
         [setEdges]
     );
 
