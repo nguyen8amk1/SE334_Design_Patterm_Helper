@@ -20,13 +20,12 @@ https://github.com/ukushu/AkinatorEngine
         -> https://refactoring.guru/design-patterns/abstract-factory
 
 # TODO: 
-
+Write the akinator engine () [] @Current
+Learn and note out all the design patterns @Next 
 
 Design some behaviour on xstate first [] (2h)
-Put the Quiz App into place [] (1h) @Next
 (Optional) Wrap the Quiz App app into Docker
 
-Learn and note out all the design patterns @Next 
 Sketch out the questions
 Write the expert engine 
 Stick 2 of them together 
@@ -37,3 +36,6 @@ Setup the development environment [] (2h)
     Create react app [X]
     make sure dev.sh working [X]
     make sure prod.h working [X] 
+
+Put the Quiz App into place [X] 
+    https://github.com/wingkwong/react-quiz-component?tab=readme-ov-file
