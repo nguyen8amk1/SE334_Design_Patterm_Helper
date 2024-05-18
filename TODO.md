@@ -20,7 +20,9 @@ https://github.com/ukushu/AkinatorEngine
         -> https://refactoring.guru/design-patterns/abstract-factory
 
 # TODO: 
-Design some behaviour on xstate first [] (2h)@Current  
+
+
+Design some behaviour on xstate first [] (2h)
 Put the Quiz App into place [] (1h) @Next
 (Optional) Wrap the Quiz App app into Docker
 
@@ -31,4 +33,7 @@ Stick 2 of them together
 Deploy the app on netlify
 
 # DONE
-
+Setup the development environment [] (2h) 
+    Create react app [X]
+    make sure dev.sh working [X]
+    make sure prod.h working [X] 
