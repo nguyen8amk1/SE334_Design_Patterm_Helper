@@ -1,6 +1,6 @@
 {
     "frontend": {
-        "path": ".", 
+        "path": "client", 
         "nginx-conf": "default-conf", 
 
         "dev_dockerfile": "Dev-Dockerfile", 

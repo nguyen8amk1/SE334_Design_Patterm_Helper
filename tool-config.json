@@ -1,5 +1,0 @@
-{
-    "dev__image_tag_name":"nguyen8a/dev-nalendar-design_pattern_helper-app:latest",
-    "dev__container_name": "dev-nalendar-design_pattern_helper-app-container", 
-    "prod__image_tag_name": "nguyen8a/nanlendar-design_pattern_helper-app:latest"
-}
