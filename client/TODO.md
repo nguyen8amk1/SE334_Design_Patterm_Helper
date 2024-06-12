@@ -1,37 +1,77 @@
 Quiz app: https://github.com/sachinsaini4278/React-Quiz-App
-    -> use this as a starting place  
-
-https://www.startertutorials.com/patterns/select-design-pattern.html
-https://github.com/ukushu/AkinatorEngine
-
-**SEARCH DESIGN PATTERN THROUGH:
-    + LIST OF QUESTIONS (LIKE AKINATOR) 
-        https://stackoverflow.com/questions/13649646/what-kind-of-algorithm-is-behind-the-akinator-game
-        https://www.youtube.com/watch?v=m4rRMeGzFLg
-        With animation to illustrate the questions (if in can :v) 
-        -> We only have 23 answers, so things are gonna be way easier, i hope :v
-    +**
-    USING REACT QUIZ LIBRARY
-
-    The engine guessing the problem -> then map it to the design patterns 
-
-+ Generate pseudo code []
-    The pseudo code could easily be found here: 
-        -> https://refactoring.guru/design-patterns/abstract-factory
-
-# TODO: 
-Write the akinator engine () [] @Current
-Learn and note out all the design patterns @Next 
-
-Design some behaviour on xstate first [] (2h)
-(Optional) Wrap the Quiz App app into Docker
-
-Sketch out the questions
-Write the expert engine 
-Stick 2 of them together 
+    -> use thi them together 
 Deploy the app on netlify
 
 # DONE
+
+# TODO
+**VISUALIZE BAYESIAN THEOREM WITH A RECTANGLE**
+
++ NOTE: 
+    the list of questions should be intent-based, 
+        -> easier to select a good one 
+
+## 1. How the system works: 
+1. Key components: 
+    + 1. Design patterns
+    + 2. Questions: 
+        Questions asked to **GATHER CLUES ABOUT WHICH DESIGN PATTERN IS NEEDED**
+    + 3. Answers
+        + Yes
+        + No
+        + Don't know
+        + Probably yes
+        + Probably no
+
+2. How the system works:
+    + 1. Start with Equal chances:
+        at the beginning, our system thinks all design patterns are equally likely to be the answer
+            -> **Maybe apply these chances to the system: https://github.com/anonystick/learning-design-patterns**
+
+    + 2. Ask a question: 
+        System ask question to get more information
+
+    + 3. Get the answer: 
+        You response with an answer
+
+    + 4. Update Knowledge:
+        **Based on your answer, 
+        the system UPDATES ITS UNDERSTANDING of:
+            1. which design patterns are more likely 
+            2. which are less likely to be the right answer**.
+
+    + 5. Pick another question:
+        that it thinks will be the most helpful in getting closer to the right answer  
+        
+3. Details: 
+    There are 2 different process here: 
+    1. Update the knowledge 
+        -> Bayes theory 
+        **UPDATING THE PROBABILITY DISTRIBUTION**
+
+    2. Choosing the next questions
+        -> Information Entropy
+        
+
+
+
+
+What's the flow that we want, steps:
+    1. a question get prompted, with listed answer
+    2. user select an answer
+    3. if found a solution: 
+        print the solution
+    else 
+    4. go to 1
+
++ Requirements: 
+    Guess the design pattern correctly ??  
+        -> Metrics:
+            ...@Later 
+
++ Do a better work at the place holder code: 
+    ...@Later
+    
 Setup the development environment [] (2h) 
     Create react app [X]
     make sure dev.sh working [X]
