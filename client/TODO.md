@@ -5,7 +5,8 @@ Deploy the app on netlify
 # DONE
 
 # TODO
-**VISUALIZE BAYESIAN THEOREM WITH A RECTANGLE**
+**VISUALIZE BAYESIAN THEOREM WITH A RECTANGLE, 
+    BETTER WITH A HISTOGRAM THOUGH**
 
 + NOTE: 
     the list of questions should be intent-based, 
