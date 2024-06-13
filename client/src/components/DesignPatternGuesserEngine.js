@@ -23,9 +23,6 @@ class DesignPatternGuesserEngine {
             participatedInStudyGroups: "Are you in any particular study group ?",
         }; 
 
-
-
-
         //this.evKeys = Object.keys(this.evidenceToQuestionMapping);
         this.questionList = Object.values(this.evidenceToQuestionMapping);
 

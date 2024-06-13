@@ -5,7 +5,23 @@ Deploy the app on netlify
 # DONE
 
 # TODO
+
+## THE SYSTEM CONSIST OF 2 PARTS
+1. the learning part 
+    -> multistep bayes 
+2. the choosing question part 
+    -> information entropy 
+        -> shannon entropy
+
+
+
+
+**CONNECT THE SYSTEM TO A UI** @Current
+    -> 
+
 **SETUP A TRAINING LOOP USING CHATGPT API TO TRAIN THE SYSTEM** @Next
+    NEED TO FIGURE OUT HOW THE TRAINING LOOP GONNA WORK FIRST ?? 
+    NEED TO SETUP KINDA LIKE AKINATOR TRAINING LOOP 
 
 **VISUALIZE BAYESIAN THEOREM WITH A RECTANGLE, 
     BETTER WITH A HISTOGRAM THOUGH**
