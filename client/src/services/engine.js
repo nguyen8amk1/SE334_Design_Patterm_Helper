@@ -76,6 +76,11 @@ class DesignPatternEngine {
         return this.currentNode.data;
     }
 
+    result() {
+        if(!this.endGame()) return "THE GAME HAVEN'T END YET";
+        return this.currentNode.data;
+    }
+
     endGame() {
         return this.currentNode.isEnd();
     }
@@ -116,6 +121,7 @@ const simulate1 = (graph, startNodeId) => {
         console.log("User answer: ", userAnswer)
         engine.answer(userAnswer);
     }
+    console.log(engine.result());
 }
 
 //simulate1(graph, 0);

@@ -2,13 +2,11 @@ Quiz app: https://github.com/sachinsaini4278/React-Quiz-App
     -> use thi them together 
 Deploy the app on netlify
 
-# DONE
 
 # TODO
-CONNECT THE SYSTEM TO THE UI [] 
-    what we need: 
-        an api to output a (next) question [] @Current
-        an api to submit an answer to that question []
+Use proper questions [] (1h) @Current 
+Make better ui [] (2h) @Next 
+
 
 ## Design pattern exercise to test the system
 https://opencoursehub.cs.sfu.ca/bfraser/grav-cms/cmpt373/exercises/design_pattern_exercise
@@ -110,3 +108,10 @@ Setup the development environment [] (2h)
 
 Put the Quiz App into place [X] 
     https://github.com/wingkwong/react-quiz-component?tab=readme-ov-file
+
+CONNECT THE SYSTEM TO THE UI [X] 
+    what we need: 
+        an api to output a (next) question [] @Current
+        an api to submit an answer to that question []
+
+Make the answer actually answer [X] 
