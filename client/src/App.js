@@ -4,7 +4,6 @@ import Quiz from 'react-quiz-component';
 import {quiz} from './Quiz'
 
 function App() {
-
     return (
         <div className="App">
             <Quiz quiz={quiz}/>

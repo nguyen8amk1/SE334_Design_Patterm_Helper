@@ -5,6 +5,13 @@ Deploy the app on netlify
 # DONE
 
 # TODO
+## Design pattern exercise to test the system
+https://opencoursehub.cs.sfu.ca/bfraser/grav-cms/cmpt373/exercises/design_pattern_exercise
+https://github.com/ZapDos7/design-patterns-examples?tab=readme-ov-file#exercise-1
+
+(this is not exercise but very good source) https://ase.in.tum.de/lehrstuhl_1/files/teaching/ws0607/Software%20Engineering%20I/L13_DesignPatterns.pdf
+    https://www.gofpattern.com/design-patterns/module7/how-to-choose-designPattern.php
+
 
 ## THE SYSTEM CONSIST OF 2 PARTS
 1. the learning part 
