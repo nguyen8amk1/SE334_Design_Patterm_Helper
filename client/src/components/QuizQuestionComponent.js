@@ -1,15 +1,36 @@
-import {Akinator} from './AkinatorComponent'
+import {Akinator} from './AkinatorComponent';
+import {DesignPatternAnimation} from './DesignPatternAnimationComponent';
 
 export default function QuizQuestionComponent({currentQuestion, handleAnswerSubmit}) {
+    // TODO: display the questions inside a rectangle block like akinator
+    // With animation on the left or right
     return (
         <div className="question">
-            <h2>{currentQuestion.question}</h2>
             <div style={{
-                width: '200px',
+                width: '500px',
                 height: '300px',
                 backgroundColor: 'green',
                 color: "white", 
-            }}>Design pattern Animation</div>
+                display: "flex",  
+                flexDirection: "column",  
+                alignItem: "center",  
+                justifyContent: "center",  
+            }}>{currentQuestion.question}</div>
+
+
+            <DesignPatternAnimation style={{
+                width: '300px',
+                height: '300px',
+                backgroundColor: 'green',
+                color: "white", 
+                display: "flex",  
+                flexDirection: "column",  
+                alignItem: "center",  
+                justifyContent: "center",  
+                position: 'absolute',  // Position absolutely for precise placement
+                top: '50px',    // Adjust top position
+                left: '50px',  // Adjust right position
+            }}/>
 
             <div className="btns">
                 {currentQuestion.answers.map((answer, index) => (
@@ -18,7 +39,16 @@ export default function QuizQuestionComponent({currentQuestion, handleAnswerSubm
                     </button>
                 ))}
             </div>
-            <Akinator/>
+
+            <Akinator style={{
+                width: '250px',   // Adjust width as needed
+                height: '400px',  // Adjust height as needed
+                backgroundColor: '#3498db',  // Big blue rectangle color
+                position: 'absolute',  // Position absolutely for precise placement
+                top: '50px',    // Adjust top position
+                right: '150px',  // Adjust right position
+                color: "white",
+            }}/>
         </div>
     );
 }
