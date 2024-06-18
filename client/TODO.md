@@ -5,10 +5,10 @@ Deploy the app on netlify
 # DONE
 
 # TODO
-CONNECT THE SYSTEM TO THE UI [] @Current
+CONNECT THE SYSTEM TO THE UI [] 
     what we need: 
-        an api to output a (next) question 
-        an api to submit an answer to that question
+        an api to output a (next) question [] @Current
+        an api to submit an answer to that question []
 
 ## Design pattern exercise to test the system
 https://opencoursehub.cs.sfu.ca/bfraser/grav-cms/cmpt373/exercises/design_pattern_exercise

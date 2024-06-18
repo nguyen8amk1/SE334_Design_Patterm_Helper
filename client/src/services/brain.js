@@ -26,10 +26,12 @@ const graphJSON = {
         {id: 9, data: "Answer: This is type A3", action: testNodeCallback, end: true},
 
 
+        // questions
         {id: 20, data: "Question B1 detail: More detail on type B1 type?", action: testNodeCallback, end: false},
         {id: 21, data: "Question B2 detail: More detail on type B2 type?", action: testNodeCallback, end: false},
         {id: 22, data: "Question B3 detail: More detail on type B3 type?", action: testNodeCallback, end: false},
 
+        // answers
         {id: 200, data: "Answer: This is type B1", action: testNodeCallback, end: true},
         {id: 201, data: "Answer: This is type B2", action: testNodeCallback, end: true},
         {id: 202, data: "Answer: This is type B3", action: testNodeCallback, end: true},
