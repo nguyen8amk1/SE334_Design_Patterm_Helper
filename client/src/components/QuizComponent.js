@@ -27,7 +27,7 @@ const quizQuestions = [
     }
 ];
 
-const getRandomQuestion = () => {
+const getRandomQuestion = async () => {
     const randomIndex = Math.floor(Math.random() * quizQuestions.length);
     return quizQuestions[randomIndex];
 };
@@ -37,8 +37,8 @@ const QuizComponent = () => {
     const [quizComplete, setQuizComplete] = useState(false);
     const [quizStarted, setQuizStarted] = useState(false);
 
-    const fetchNextQuestion = () => {
-        const question = getRandomQuestion();
+    const fetchNextQuestion = async () => {
+        const question = await getRandomQuestion();
         if (question.question === "done") {
             setQuizComplete(true);
         } else {
@@ -46,8 +46,8 @@ const QuizComponent = () => {
         }
     };
 
-    const handleAnswerSubmit = (answer) => {
-        fetchNextQuestion();
+    const handleAnswerSubmit = async (answer) => {
+        await fetchNextQuestion();
     };
 
     return (

@@ -3,7 +3,7 @@ export default function QuizQuestionComponent({currentQuestion, handleAnswerSubm
         <div>
             <h2>{currentQuestion.question}</h2>
             {currentQuestion.answers.map((answer, index) => (
-                <button key={index} onClick={() => handleAnswerSubmit(answer)}>
+                <button key={index} onClick={async () => await handleAnswerSubmit(answer)}>
                     {answer}
                 </button>
             ))}
