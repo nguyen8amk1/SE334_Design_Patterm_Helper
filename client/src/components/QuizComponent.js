@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import QuizStartComponent from './QuizStartComponent';
 import QuizResultComponent from './QuizResultComponent';
 import QuizQuestionComponent from './QuizQuestionComponent';
+import {DesignPatternEngine, graphFromJSON} from '../services/engine';
+import {graphJSON} from '../services/brain';
 
 // Sample quiz questions
 const quizQuestions = [
@@ -27,9 +29,17 @@ const quizQuestions = [
     }
 ];
 
+const graph = graphFromJSON(graphJSON);
+const engine = new DesignPatternEngine(graph, 0);
+
 const getRandomQuestion = async () => {
-    const randomIndex = Math.floor(Math.random() * quizQuestions.length);
-    return quizQuestions[randomIndex];
+    // const randomIndex = Math.floor(Math.random() * quizQuestions.length);
+    // return quizQuestions[randomIndex];
+    const question = await engine.getNextQuestion()
+    return {
+        question: question, 
+        answers: ["YES", "NO"],
+    };
 };
 
 const QuizComponent = () => {
@@ -38,15 +48,16 @@ const QuizComponent = () => {
     const [quizStarted, setQuizStarted] = useState(false);
 
     const fetchNextQuestion = async () => {
-        const question = await getRandomQuestion();
-        if (question.question === "done") {
+        if (engine.endGame()) {
             setQuizComplete(true);
         } else {
+            const question = await getRandomQuestion();
             setCurrentQuestion(question);
         }
     };
 
     const handleAnswerSubmit = async (answer) => {
+        engine.answer(answer);
         await fetchNextQuestion();
     };
 

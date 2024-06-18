@@ -118,4 +118,9 @@ const simulate1 = (graph, startNodeId) => {
     }
 }
 
-simulate1(graph, 0);
+//simulate1(graph, 0);
+
+module.exports = {
+    DesignPatternEngine, 
+    graphFromJSON, 
+}
