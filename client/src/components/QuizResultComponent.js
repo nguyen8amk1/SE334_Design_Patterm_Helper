@@ -3,7 +3,7 @@ export default function QuizResultComponent({result}) {
         <div>
             <h2>I have concluded my final answer to your problem</h2>
             <p>{result}</p>
-            <button onClick={() => window.location.reload()}>Try Again</button>
+            <button className="btn red" onClick={() => window.location.reload()}>Try Again</button>
         </div>
     );
 }

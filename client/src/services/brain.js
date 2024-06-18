@@ -9,6 +9,7 @@ const testEdgeCallback = (edgeInfo) => {
 const chooseRandomDesignPatternTypeQuestion = (nodeInfo) => {
 }
 
+// TODO: put in real questions, answers
 const graphJSON = {
     nodes: [
         {id: 0, data: "Choose random question",      action: testNodeCallback, end: false},

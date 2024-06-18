@@ -4,8 +4,10 @@ Deploy the app on netlify
 
 
 # TODO
-Use proper questions [] (1h) @Current 
-Make better ui [] (2h) @Next 
+Make better ui [] (2h) @Current
+    This one looks great: https://codepen.io/about7codes/pen/rNWmGNW
+
+Use proper questions [] (1h) @Next
 
 
 ## Design pattern exercise to test the system
@@ -22,12 +24,6 @@ https://github.com/ZapDos7/design-patterns-examples?tab=readme-ov-file#exercise-
 2. the choosing question part 
     -> information entropy 
         -> shannon entropy
-
-
-
-
-**CONNECT THE SYSTEM TO A UI** @Current
-    -> 
 
 **SETUP A TRAINING LOOP USING CHATGPT API TO TRAIN THE SYSTEM** @Next
     NEED TO FIGURE OUT HOW THE TRAINING LOOP GONNA WORK FIRST ?? 
