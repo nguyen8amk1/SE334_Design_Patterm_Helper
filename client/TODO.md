@@ -5,6 +5,30 @@ Deploy the app on netlify
 # DONE
 
 # TODO
+CONNECT THE SYSTEM TO THE UI @Current
+    Get the yes no question ui to work [] @Current
+        the whole quiz system is based on json file 
+        we can generate the quiz json from our graph json =)) [] @Next
+
+    + Problem: 
+        The current question system is just a list 
+            behaviour: 
+                show a question
+                click on answer -> click next 
+                show next question
+                if all answer -> show how you do 
+                -> **PRE-BAKED QUIZ SYSTEM**
+
+        What kind of question system do we want ?? 
+            behaviour: 
+                100% mimic the engine
+                display whatever question the engine spit out 
+                get the user answer and chug the answer into the engine
+                -> **REAL TIME QUIZ SYSTEM**
+                -> this is all we want
+
+
+
 ## Design pattern exercise to test the system
 https://opencoursehub.cs.sfu.ca/bfraser/grav-cms/cmpt373/exercises/design_pattern_exercise
 https://github.com/ZapDos7/design-patterns-examples?tab=readme-ov-file#exercise-1
