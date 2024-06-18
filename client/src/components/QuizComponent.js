@@ -1,21 +1,26 @@
 import React, { useState, useEffect } from 'react';
 
+// Sample quiz questions
 const quizQuestions = [
     {
         question: "What is the capital of France?",
         answers: ["Paris", "London", "Berlin", "Madrid"],
+        correctAnswer: "Paris"
     },
     {
         question: "Which planet is known as the Red Planet?",
         answers: ["Earth", "Mars", "Venus", "Jupiter"],
+        correctAnswer: "Mars"
     },
     {
         question: "What is 2 + 2?",
         answers: ["3", "4", "5", "6"],
+        correctAnswer: "4"
     },
     {
         question: "done",
         answers: [],
+        correctAnswer: ""
     }
 ];
 
@@ -27,10 +32,12 @@ const getRandomQuestion = () => {
 const QuizComponent = () => {
     const [currentQuestion, setCurrentQuestion] = useState(null);
     const [quizComplete, setQuizComplete] = useState(false);
+    const [quizStarted, setQuizStarted] = useState(false);
 
-    useEffect(() => {
+    const startQuiz = () => {
+        setQuizStarted(true);
         fetchNextQuestion();
-    }, []);
+    };
 
     const fetchNextQuestion = () => {
         const question = getRandomQuestion();
@@ -44,6 +51,13 @@ const QuizComponent = () => {
     const handleAnswerSubmit = (answer) => {
         fetchNextQuestion();
     };
+
+    const renderStartScreen = () => (
+        <div>
+            <h2>Welcome to the Quiz!</h2>
+            <button onClick={startQuiz}>Start Quiz</button>
+        </div>
+    );
 
     const renderQuestion = () => (
         <div>
@@ -66,9 +80,11 @@ const QuizComponent = () => {
 
     return (
         <div>
-            {quizComplete ? renderResult() : currentQuestion && renderQuestion()}
+            {!quizStarted && renderStartScreen()}
+            {quizStarted && (quizComplete ? renderResult() : currentQuestion && renderQuestion())}
         </div>
     );
 };
 
 export default QuizComponent;
+
