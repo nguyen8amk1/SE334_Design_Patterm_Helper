@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import QuizStartComponent from './QuizStartComponent';
+import QuizResultComponent from './QuizResultComponent';
+import QuizQuestionComponent from './QuizQuestionComponent';
 
 // Sample quiz questions
 const quizQuestions = [
@@ -34,11 +37,6 @@ const QuizComponent = () => {
     const [quizComplete, setQuizComplete] = useState(false);
     const [quizStarted, setQuizStarted] = useState(false);
 
-    const startQuiz = () => {
-        setQuizStarted(true);
-        fetchNextQuestion();
-    };
-
     const fetchNextQuestion = () => {
         const question = getRandomQuestion();
         if (question.question === "done") {
@@ -52,39 +50,12 @@ const QuizComponent = () => {
         fetchNextQuestion();
     };
 
-    const renderStartScreen = () => (
-        <div>
-            <h2>Welcome to the Quiz!</h2>
-            <button onClick={startQuiz}>Start Quiz</button>
-        </div>
-    );
-
-    const renderQuestion = () => (
-        <div>
-            <h2>{currentQuestion.question}</h2>
-            {currentQuestion.answers.map((answer, index) => (
-                <button key={index} onClick={() => handleAnswerSubmit(answer)}>
-                    {answer}
-                </button>
-            ))}
-        </div>
-    );
-
-    const renderResult = () => (
-        <div>
-            <h2>Quiz Complete!</h2>
-            <p>Thank you for completing the quiz.</p>
-            <button onClick={() => window.location.reload()}>Try Again</button>
-        </div>
-    );
-
     return (
         <div>
-            {!quizStarted && renderStartScreen()}
-            {quizStarted && (quizComplete ? renderResult() : currentQuestion && renderQuestion())}
+            {!quizStarted && <QuizStartComponent setQuizStarted={setQuizStarted} fetchNextQuestion={fetchNextQuestion}/>}
+            {quizStarted && (quizComplete ? <QuizResultComponent/> : currentQuestion && <QuizQuestionComponent currentQuestion={currentQuestion} handleAnswerSubmit={handleAnswerSubmit}/>)}
         </div>
     );
 };
 
 export default QuizComponent;
-
