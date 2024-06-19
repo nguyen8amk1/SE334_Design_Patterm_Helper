@@ -1,4 +1,5 @@
 import {akinatorSprites, frameWidth, frameHeight, imageURL} from '../services/akinator_sprites'; 
+import ImageCropper from './ImageCropper';
 
 export function Akinator({style}) {
     // TODO: akinator
@@ -11,15 +12,24 @@ export function Akinator({style}) {
     const frameX = frameInfo.u*frameWidth;
     const frameY = frameInfo.v*frameHeight;
 
-    const crop = {
-        // TODO: crop the frame here 
-
-    };
+    const newframeX = frameX+120;
+    const newframeY = frameY+250;
+    const newframeWidth = frameWidth-200;
+    const newframeHeight = frameHeight-450;
 
     return (
         <>
-            <div style={style}>Akinator sprite</div>
-            <img style={crop}src={imageURL}/>
+            <div style={style}>
+                <ImageCropper
+                src={imageURL}
+                alt="Image to crop"
+                x={newframeX}
+                y={newframeY}
+                width={newframeWidth}
+                height={newframeHeight}
+                invertVerticalAxis={true}
+                />
+            </div>
         </>
     );
 }

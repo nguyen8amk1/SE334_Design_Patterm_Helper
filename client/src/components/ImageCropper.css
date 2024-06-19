@@ -1,0 +1,10 @@
+/* ImageCropper.css */
+.crop-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.crop-container img {
+    position: absolute;
+}
+

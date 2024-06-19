@@ -8,7 +8,7 @@
 // NOTE: this contains uv coord
 const frameWidth = 670;
 const frameHeight = 1095;
-const imageURL = "../../public/akinator.png";
+const imageURL = "/akinator.png";
 const akinatorSprites = {
     Neutral: {
         u: 3, 

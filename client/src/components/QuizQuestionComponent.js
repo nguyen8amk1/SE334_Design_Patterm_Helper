@@ -28,7 +28,8 @@ export default function QuizQuestionComponent({currentQuestion, handleAnswerSubm
                 alignItem: "center",  
                 justifyContent: "center",  
                 position: 'absolute',  // Position absolutely for precise placement
-                top: '50px',    // Adjust top position
+                //top: '50px',    // Adjust top position
+                top: '0px',    // Adjust top position
                 left: '50px',  // Adjust right position
             }}/>
 
@@ -41,12 +42,12 @@ export default function QuizQuestionComponent({currentQuestion, handleAnswerSubm
             </div>
 
             <Akinator style={{
-                width: '250px',   // Adjust width as needed
-                height: '400px',  // Adjust height as needed
-                backgroundColor: '#3498db',  // Big blue rectangle color
+                // width: '250px',   // Adjust width as needed
+                // height: '400px',  // Adjust height as needed
+                // backgroundColor: '#3498db',  // Big blue rectangle color
                 position: 'absolute',  // Position absolutely for precise placement
-                top: '50px',    // Adjust top position
-                right: '150px',  // Adjust right position
+                top: '10px',    // Adjust top position
+                right: '0px',  // Adjust right position
                 color: "white",
             }}/>
         </div>

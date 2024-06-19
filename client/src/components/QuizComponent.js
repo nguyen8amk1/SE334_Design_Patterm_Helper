@@ -62,10 +62,13 @@ const QuizComponent = () => {
     };
 
     return (
-        <div>
-            {!quizStarted && <QuizStartComponent setQuizStarted={setQuizStarted} fetchNextQuestion={fetchNextQuestion}/>}
-            {quizStarted && (quizComplete ? <QuizResultComponent result={engine.result()}/> : currentQuestion && <QuizQuestionComponent currentQuestion={currentQuestion} handleAnswerSubmit={handleAnswerSubmit}/>)}
-        </div>
+        <>
+            <h1>DESIGN PATTERN GUESSER</h1>
+            <div>
+                {!quizStarted && <QuizStartComponent setQuizStarted={setQuizStarted} fetchNextQuestion={fetchNextQuestion}/>}
+                {quizStarted && (quizComplete ? <QuizResultComponent result={engine.result()}/> : currentQuestion && <QuizQuestionComponent currentQuestion={currentQuestion} handleAnswerSubmit={handleAnswerSubmit}/>)}
+            </div>
+        </>
     );
 };
 
