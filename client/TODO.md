@@ -2,6 +2,9 @@ Quiz app: https://github.com/sachinsaini4278/React-Quiz-App
     -> use thi them together 
 Deploy the app on netlify
 
+## THINGS TO IMPROVE
+a narrowing problem system 
+implement the shannon entropy to reduce the amount of questions  
 
 # TODO
 Use proper questions [X] (1h)
@@ -41,10 +44,10 @@ Make better ui [] (2h)
 
     Make better question and answer block [X] 
 
-    Make better questions [] @Current
+    Make better questions [] @Next
         reference: https://preview.redd.it/eyiqu9l3n6p81.png?width=1790&format=png&auto=webp&s=20d0d94635fea4d6dc4410c381ff8ae66f92e699
 
-    Adding emotion system to the akinator [] @Next
+    Adding emotion system to the akinator [] @Current
 
 Make the questions visualization animations gifs [] @Later
     reference: https://opensource.com/article/19/7/understanding-software-design-patterns

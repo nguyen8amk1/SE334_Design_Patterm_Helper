@@ -1,19 +1,31 @@
 import {Akinator} from './AkinatorComponent';
 import {DesignPatternAnimation} from './DesignPatternAnimationComponent';
+import {useState} from 'react';
 
 export default function QuizQuestionComponent({currentQuestion, handleAnswerSubmit}) {
     // TODO: display the questions inside a rectangle block like akinator
     // With animation on the left or right
     //
     // TODO: This emotion should be a state machine as well 
-    const emotionMapping = {
-        10: "Neutral", 
-        10: "Thinking", 
-        10: "Confident", 
-        10: "Happy", 
-    };  // TODO: map a number to emotion string 
+    const [questionCounter, setQuestionCounter] = useState(0);
 
-    const emotion = "Neutral";
+    const emotionMapping = ["Neutral", "Confident", "Confident", "Thinking"];
+
+
+    const clamp = (min, num, max) => {
+        if (num <= min) return min;
+        if (num > max) return max;
+        return num;
+    }
+
+    //console.log(emotionMapping[clamp(0, questionCounter, emotionMapping.length)]);
+    //const emotion = "Neutral";
+    const emotion = emotionMapping[clamp(0, questionCounter, emotionMapping.length-1)]
+    console.log(emotion);
+
+    const handleQuestionCounter = () => {
+        setQuestionCounter(prevCounter => prevCounter + 1); // Increment questionCounter
+    };
 
     return (
         <>
@@ -55,7 +67,7 @@ export default function QuizQuestionComponent({currentQuestion, handleAnswerSubm
 
                 <div className="btns">
                     {currentQuestion.answers.map((answer, index) => (
-                        <button className={answer == "YES" ? "btn green" : "btn red"}key={index} onClick={async () => await handleAnswerSubmit(answer)}>
+                        <button  className={answer == "YES" ? "btn green" : "btn red"}key={index} onClick={async () => { await handleAnswerSubmit(answer); handleQuestionCounter();}} >
                             {answer}
                         </button>
                     ))}
@@ -70,6 +82,8 @@ export default function QuizQuestionComponent({currentQuestion, handleAnswerSubm
                     right: '70px',  // Adjust right position
                     color: "white",
                 }}
+                    //emotion={emotionMapping[questionCounter]}/>
+                    //emotion={emotionMapping[0, clamp(questionCounter), emotionMapping.length]}/>
                     emotion={emotion}/>
             </div>
 
