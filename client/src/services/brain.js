@@ -23,12 +23,11 @@ const graphJSON = {
 
         // NOTE: CREATIONAL PATTERN
         {id: 1, data: "Do your problem involves creating new instances of objects?", action: testNodeCallback, end: false},
-
-        {id: 10, data: "Do you need to create objects that belong to related families or groups? Is it important for you to ensure that objects created are compatible with each other?", action: testNodeCallback, end: false},
-        {id: 11, data: "Do you want to separate the process of constructing a complex object from its final representation?Is it necessary to create different representations of the same construction process?", action: testNodeCallback, end: false},
-        {id: 12, data: "Do you need to create instances of several related classes that share a common interface or base class?Is it crucial for you to delegate the instantiation logic to subclasses?", action: testNodeCallback, end: false},
-        {id: 13, data: "Do you need to create new objects by copying existing ones? Is it essential to have fully initialized instances that can be cloned?", action: testNodeCallback, end: false},
-        {id: 14, data: "Do you need to ensure that only one instance of a class exists throughout the application?Is it important for you to provide a global point of access to this instance?", action: testNodeCallback, end: false},
+        {id: 10, data: "Do you need to create objects that belong to related families or groups?\n\nIs it important for you to ensure that objects created are compatible with each other?", action: testNodeCallback, end: false},
+        {id: 11, data: "Do you want to separate the process of constructing a complex object from its final representation?\n\nIs it necessary to create different representations of the same construction process?", action: testNodeCallback, end: false},
+        {id: 12, data: "Do you need to create instances of several related classes that share a common interface or base class?\n\nIs it crucial for you to delegate the instantiation logic to subclasses?", action: testNodeCallback, end: false},
+        {id: 13, data: "Do you need to create new objects by copying existing ones?\n\nIs it essential to have fully initialized instances that can be cloned?", action: testNodeCallback, end: false},
+        {id: 14, data: "Do you need to ensure that only one instance of a class exists throughout the application?\n\nIs it important for you to provide a global point of access to this instance?", action: testNodeCallback, end: false},
 
 
         {id: 100, data: "Abstract Factory", action: () => additionalInfo("/abstract-factory-diagram.png"), end: true},
@@ -41,13 +40,13 @@ const graphJSON = {
         // NOTE: STRUCTURAL PATTERN 
         {id: 2, data: "Do your problem involves combining different objects together?", action: testNodeCallback, end: false},
 
-        {id: 20, data: "Do you need to integrate systems with incompatible interfaces?Do you have classes that need to work together but have different interfaces?", action: testNodeCallback, end: false},
-        {id: 21, data: "Do you want to separate the abstraction from the implementation? Do you need to vary the implementation independently from the client code?", action: testNodeCallback, end: false},
-        {id: 22, data: "Do you need to represent part-whole hierarchies? Do you require uniform treatment for both individual objects and compositions of objects?", action: testNodeCallback, end: false},
-        {id: 23, data: "Do you need to add responsibilities to objects at runtime? Do you want to avoid creating subclasses for every possible combination of responsibilities?", action: testNodeCallback, end: false},
-        {id: 24, data: " **Do you want to simplify the interaction with a complex subsystem? **Do you need a unified interface to a set of interfaces in a subsystem? ", action: testNodeCallback, end: false},
-        {id: 25, data: " Do you need to support a large number of similar objects efficiently? Do you want to minimize memory usage by sharing objects? ", action: testNodeCallback, end: false},
-        {id: 26, data: " Do you need to control access to another object? Do you want to add a level of indirection to manage access to an object?", action: testNodeCallback, end: false},
+        {id: 20, data: "Do you need to integrate systems with incompatible interfaces?\n\nDo you have classes that need to work together but have different interfaces?", action: testNodeCallback, end: false},
+        {id: 21, data: "Do you want to separate the abstraction from the implementation?\n\nDo you need to vary the implementation independently from the client code?", action: testNodeCallback, end: false},
+        {id: 22, data: "Do you need to represent part-whole hierarchies?\n\nDo you require uniform treatment for both individual objects and compositions of objects?", action: testNodeCallback, end: false},
+        {id: 23, data: "Do you need to add responsibilities to objects at runtime?\n\nDo you want to avoid creating subclasses for every possible combination of responsibilities?", action: testNodeCallback, end: false},
+        {id: 24, data: "**Do you want to simplify the interaction with a complex subsystem?\n\n**Do you need a unified interface to a set of interfaces in a subsystem? ", action: testNodeCallback, end: false},
+        {id: 25, data: " Do you need to support a large number of similar objects efficiently?\n\nDo you want to minimize memory usage by sharing objects? ", action: testNodeCallback, end: false},
+        {id: 26, data: " Do you need to control access to another object?\n\nDo you want to add a level of indirection to manage access to an object?", action: testNodeCallback, end: false},
 
         // answers
         {id: 200, data: "Adapter", action: () => additionalInfo("/adapter-diagram.png"), end: true},
@@ -59,22 +58,22 @@ const graphJSON = {
         {id: 206, data: "Proxy", action: () => additionalInfo("/proxy-diagram.png"), end: true},
 
         // NOTE: BEHAVIORAL PATTERN
-        {id: 3, data: "Do your problem related to how different objects talk to each other ? Do your problem related to how object should behave in a certain scenarios ?", action: testNodeCallback, end: false},
-        {id: 30, data: " Do you need to handle a request through a series of handlers? Do you want to decouple the sender of a request from its receiver? ", action: testNodeCallback, end: false},
-        {id: 31, data: " **Do you need to parameterize objects with operations? Do you want to queue or log requests, or support undoable operations? ", action: testNodeCallback, end: false},
-        {id: 32, data: " Do you need to interpret sentences in a language? Do you have a grammar that needs to be evaluated? ", action: testNodeCallback, end: false},
-        {id: 33, data: " Do you need to access elements of a collection without exposing its underlying representation? Do you want to provide a uniform way to traverse different collections? ", action: testNodeCallback, end: false},
-        {id: 34, data: " Do you need to reduce the communication complexity between multiple objects or classes? Do you want to centralize control logic? ", action: testNodeCallback, end: false},
+        {id: 3, data: "Do your problem related to how different objects talk to each other ?\n\nDo your problem related to how object should behave in a certain scenarios ?", action: testNodeCallback, end: false},
+        {id: 30, data: " Do you need to handle a request through a series of handlers?\n\nDo you want to decouple the sender of a request from its receiver? ", action: testNodeCallback, end: false},
+        {id: 31, data: " **Do you need to parameterize objects with operations?\n\nDo you want to queue or log requests, or support undoable operations?", action: testNodeCallback, end: false},
+        {id: 32, data: " Do you need to interpret sentences in a language?\n\nDo you have a grammar that needs to be evaluated?", action: testNodeCallback, end: false},
+        {id: 33, data: " Do you need to access elements of a collection without exposing its underlying representation?\n\nDo you want to provide a uniform way to traverse different collections? ", action: testNodeCallback, end: false},
+        {id: 34, data: " Do you need to reduce the communication complexity between multiple objects or classes?\n\nDo you want to centralize control logic? ", action: testNodeCallback, end: false},
 
-        {id: 35, data: " Do you need to save and restore an object's state? Do you want to implement undo/redo functionality? ", action: testNodeCallback, end: false},
+        {id: 35, data: " Do you need to save and restore an object's state?\n\nDo you want to implement undo/redo functionality? ", action: testNodeCallback, end: false},
 
-        {id: 36, data: " Do you need to notify multiple objects about changes in another object? Do you want to ensure that objects are in sync without tight coupling? ", action: testNodeCallback, end: false},
+        {id: 36, data: " Do you need to notify multiple objects about changes in another object?\n\nDo you want to ensure that objects are in sync without tight coupling? ", action: testNodeCallback, end: false},
 
-        {id: 37, data: " Do you need to change the behavior of an object based on its state? Do you want to avoid using numerous conditional statements? ", action: testNodeCallback, end: false},
+        {id: 37, data: " Do you need to change the behavior of an object based on its state?\n\nDo you want to avoid using numerous conditional statements? ", action: testNodeCallback, end: false},
         
-        {id: 38, data: " Do you need to select an algorithm at runtime? Do you want to define a family of algorithms and make them interchangeable? ", action: testNodeCallback, end: false},
+        {id: 38, data: " Do you need to select an algorithm at runtime?\n\nDo you want to define a family of algorithms and make them interchangeable? ", action: testNodeCallback, end: false},
 
-        {id: 39, data: " Do you need to define the skeleton of an algorithm in a method, deferring some steps to subclasses? Do you want to allow subclasses to redefine certain steps of an algorithm without changing its structure? ", action: testNodeCallback, end: false},
+        {id: 39, data: " Do you need to define the skeleton of an algorithm in a method, deferring some steps to subclasses?\n\nDo you want to allow subclasses to redefine certain steps of an algorithm without changing its structure? ", action: testNodeCallback, end: false},
 
         {id: 391, data: " Do you need to add operations to classes without changing them? Do you want to apply operations across a set of heterogeneous objects? ", action: testNodeCallback, end: false},
 

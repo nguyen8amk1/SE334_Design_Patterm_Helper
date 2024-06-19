@@ -43,6 +43,7 @@ Make better ui [] (2h)
 
     Make better questions [] @Current
         reference: https://preview.redd.it/eyiqu9l3n6p81.png?width=1790&format=png&auto=webp&s=20d0d94635fea4d6dc4410c381ff8ae66f92e699
+
     Adding emotion system to the akinator [] @Next
 
 Make the questions visualization animations gifs [] @Later

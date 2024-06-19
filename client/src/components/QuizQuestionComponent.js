@@ -34,6 +34,7 @@ export default function QuizQuestionComponent({currentQuestion, handleAnswerSubm
                     alignItem: "center",  
                     justifyContent: "center",  
                     fontSize: "1.5em",
+                    whiteSpace: 'pre-line', 
                 }}>{currentQuestion.question}</div>
 
 
