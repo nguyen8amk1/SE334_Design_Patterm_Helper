@@ -4,13 +4,28 @@ Deploy the app on netlify
 
 
 # TODO
-Use proper questions [] (1h) @Current
+Use proper questions [X] (1h)
+Make the question sound more pleasant [] (1h) @Later
+Make the high level questions transition better (i got failed a lot) [] (1h) @Later
 
-Make better ui [] (2h) @Next
+Make better ui [] (2h)
     This one looks great: https://codepen.io/about7codes/pen/rNWmGNW
     Make design pattern animation and akinator sprite relative to the question [] @Current
+    Make the questions block looks better [] 
+    Make better start page [] (2h) []
+        With akinator in the front page  
+        With text  
+        reference: https://game24h.vn/huong-dan/wp-content/uploads/2021/04/Screenshot_15_1617783693.jpg
+            **LIKE THIS IMAGE BUT WITH TEXT AS "DESIGN PATTERN GUESSER"**
 
+    Make better result page [] (2h) []
+        reference: https://imgt.taimienphi.vn/cf/Images/lo/2018/2/23/cach-choi-akinator-game-than-den-doan-suy-nghi-3.jpg
+        with the image as the UML diagram from refactoring guru (https://refactoring.guru/images/patterns/diagrams/abstract-factory/example.png)
+        pseudo code on the right side 
 
+Make the questions visualization animations gifs [] @Later
+    reference: https://opensource.com/article/19/7/understanding-software-design-patterns
+    
 
 ## Design pattern exercise to test the system
 https://opencoursehub.cs.sfu.ca/bfraser/grav-cms/cmpt373/exercises/design_pattern_exercise
