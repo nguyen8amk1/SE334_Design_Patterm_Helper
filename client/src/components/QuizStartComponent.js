@@ -17,17 +17,7 @@ export default function QuizStartComponent({setQuizStarted, fetchNextQuestion}) 
         position: "absolute",
         zIndex:100, 
         fontSize: "5em",
-        top: "5em",
-        // color: "white", // Gold color
-        // textShadow: `
-        //     0 0 5px #FFD700,
-        //     0 0 10px #FFD700,
-        //     0 0 15px #FFD700,
-        //     0 0 20px #FFD700,
-        //     0 0 25px #FFD700
-        // `,
-        // fontWeight: "bold",
-        // fontFamily: "'Trebuchet MS', sans-serif"
+        top: "5em"
     };
 
     return (
