@@ -1,5 +1,5 @@
-const testNodeCallback = (nodeInfo) => {
-    console.log(`This is node ${nodeInfo.id}`);
+const testNodeCallback = () => {
+    console.log(`This is node`);
 }
 
 const testEdgeCallback = (edgeInfo) => {
@@ -7,6 +7,13 @@ const testEdgeCallback = (edgeInfo) => {
 }
 
 const chooseRandomDesignPatternTypeQuestion = (nodeInfo) => {
+}
+
+const additionalInfo = (diagramURL, pseudoCode) => {
+    return {
+        diagram: diagramURL, 
+        pseudoCode: pseudoCode
+    };
 }
 
 // TODO: put in real questions, answers
@@ -24,11 +31,11 @@ const graphJSON = {
         {id: 14, data: "Do you need to ensure that only one instance of a class exists throughout the application?Is it important for you to provide a global point of access to this instance?", action: testNodeCallback, end: false},
 
 
-        {id: 100, data: "Abstract Factory", action: testNodeCallback, end: true},
-        {id: 101, data: "Builder", action: testNodeCallback, end: true},
-        {id: 102, data: "Factory Method", action: testNodeCallback, end: true},
-        {id: 103, data: "Prototype", action: testNodeCallback, end: true},
-        {id: 104, data: "Singleton", action: testNodeCallback, end: true},
+        {id: 100, data: "Abstract Factory", action: () => additionalInfo("/abstract-factory-diagram.png"), end: true},
+        {id: 101, data: "Builder", action: () => additionalInfo("/builder-diagram.png"), end: true},
+        {id: 102, data: "Factory Method", action: () => additionalInfo("/factory-method-diagram.png"), end: true},
+        {id: 103, data: "Prototype", action: () => additionalInfo("/prototype-diagram.png"), end: true},
+        {id: 104, data: "Singleton", action: () => additionalInfo("/singleton-diagram.png"), end: true},
 
 
         // NOTE: STRUCTURAL PATTERN 
@@ -43,13 +50,13 @@ const graphJSON = {
         {id: 26, data: " Do you need to control access to another object? Do you want to add a level of indirection to manage access to an object?", action: testNodeCallback, end: false},
 
         // answers
-        {id: 200, data: "Adapter", action: testNodeCallback, end: true},
-        {id: 201, data: "Bridge", action: testNodeCallback, end: true},
-        {id: 202, data: "Composite", action: testNodeCallback, end: true},
-        {id: 203, data: "Decorator", action: testNodeCallback, end: true},
-        {id: 204, data: "Facade", action: testNodeCallback, end: true},
-        {id: 205, data: "Flyweight", action: testNodeCallback, end: true},
-        {id: 206, data: "Proxy", action: testNodeCallback, end: true},
+        {id: 200, data: "Adapter", action: () => additionalInfo("/adapter-diagram.png"), end: true},
+        {id: 201, data: "Bridge", action: () => additionalInfo("/bridge-diagram.png"), end: true},
+        {id: 202, data: "Composite", action: () => additionalInfo("/composite-diagram.png"), end: true},
+        {id: 203, data: "Decorator", action: () => additionalInfo("/decorator-diagram.png"), end: true},
+        {id: 204, data: "Facade", action: () => additionalInfo("/facade-diagram.png"), end: true},
+        {id: 205, data: "Flyweight", action: () => additionalInfo("/flyweight-diagram.png"), end: true},
+        {id: 206, data: "Proxy", action: () => additionalInfo("/proxy-diagram.png"), end: true},
 
         // NOTE: BEHAVIORAL PATTERN
         {id: 3, data: "Do your problem related to how different objects talk to each other ? Do your problem related to how object should behave in a certain scenarios ?", action: testNodeCallback, end: false},
@@ -71,17 +78,17 @@ const graphJSON = {
 
         {id: 391, data: " Do you need to add operations to classes without changing them? Do you want to apply operations across a set of heterogeneous objects? ", action: testNodeCallback, end: false},
 
-        {id: 300, data: "Chain of Responsibility", action: testNodeCallback, end: true},
-        {id: 301, data: "Command", action: testNodeCallback, end: true},
-        {id: 302, data: "Interpreter", action: testNodeCallback, end: true},
-        {id: 303, data: "Iterator", action: testNodeCallback, end: true},
-        {id: 304, data: "Mediator", action: testNodeCallback, end: true},
-        {id: 305, data: "Memento", action: testNodeCallback, end: true},
-        {id: 306, data: "Observer", action: testNodeCallback, end: true},
-        {id: 307, data: "State", action: testNodeCallback, end: true},
-        {id: 308, data: "Strategy", action: testNodeCallback, end: true},
-        {id: 309, data: "Template Method", action: testNodeCallback, end: true},
-        {id: 310, data: "Visitor", action: testNodeCallback, end: true},
+        {id: 300, data: "Chain of Responsibility", action: () => additionalInfo("chain-of-responsibility-diagram.png"), end: true},
+        {id: 301, data: "Command", action: () => additionalInfo("command-diagram.png"), end: true},
+        {id: 302, data: "Interpreter", action: () => additionalInfo("interpreter-diagram.png"), end: true},
+        {id: 303, data: "Iterator", action: () => additionalInfo("iterator-diagram.png"), end: true},
+        {id: 304, data: "Mediator", action: () => additionalInfo("mediator-diagram.png"), end: true},
+        {id: 305, data: "Memento", action: () => additionalInfo("memento-diagram.png"), end: true},
+        {id: 306, data: "Observer", action: () => additionalInfo("observer-diagram.png"), end: true},
+        {id: 307, data: "State", action: () => additionalInfo("state-diagram.png"), end: true},
+        {id: 308, data: "Strategy", action: () => additionalInfo("strategy-diagram.png"), end: true},
+        {id: 309, data: "Template Method", action: () => additionalInfo("template-method-diagram.png"), end: true},
+        {id: 310, data: "Visitor", action: () => additionalInfo("visitor-diagram.png"), end: true},
 
         {id: -1, data: "Failed: What the fuck are you thinking inside your head ??", action: testNodeCallback, end: false},
     ],

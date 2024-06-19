@@ -78,7 +78,7 @@ class DesignPatternEngine {
 
     result() {
         if(!this.endGame()) return "THE GAME HAVEN'T END YET";
-        return this.currentNode.data;
+        return { data: this.currentNode.data, additionalInfo: this.currentNode.action() };
     }
 
     endGame() {

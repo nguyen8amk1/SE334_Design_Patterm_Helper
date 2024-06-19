@@ -1,12 +1,16 @@
 import ImageCropper from './ImageCropper';
 import {Akinator} from './AkinatorComponent';
 
-export default function QuizResultComponent({result}) {
+export default function QuizResultComponent({result, additionalInfo}) {
+    console.log(result);
+    console.log(additionalInfo);
+
     return (
         <div style={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            position: "relative",
         }}>
 
             <div style={{
@@ -38,13 +42,27 @@ export default function QuizResultComponent({result}) {
                 flexDirection: "column",  
                 alignItem: "center",  
                 justifyContent: "center",  
-                margin: "10px"
+                margin: "10px", 
+                position: "relative",
                 // position: 'absolute',  // Position absolutely for precise placement
                 // //top: '50px',    // Adjust top position
                 // top: '0px',    // Adjust top position
                 // left: '50px',  // Adjust right position
             }}>
-                <h2>THIS IS THE UML DIAGRAM</h2>
+                <ImageCropper
+                    style={{
+                        position: "absolute", 
+                        top: '0',
+                    }}
+                src={additionalInfo.diagram}
+                alt="Image to crop"
+                x={0}
+                y={0}
+                width={1000}
+                height={1000}
+                // invertVerticalAxis={true}
+                />
+                {/* <h2>THIS IS THE UML DIAGRAM</h2> */}
             </div>
 
             <div style={{

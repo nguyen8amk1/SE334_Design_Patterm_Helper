@@ -29,11 +29,12 @@ Make better ui [] (2h)
             5. The pseudo code on the left [X]
 
         Collect the result information []
-            pseudo code 
+            pseudo code [] @Current
             uml diagram [X] 
                 Connect the uml diagram to the ui [] 
-                    Put the image link into the node [] @Current
-                    Render the image in the ui [] @Next
+                    Put the image link into the node [X] 
+                        put into the action [X]
+                    Render the image in the ui [X]
 
         with the image as the UML diagram from refactoring guru (https://refactoring.guru/images/patterns/diagrams/abstract-factory/example.png)
         pseudo code on the right side 

@@ -86,7 +86,7 @@ const QuizComponent = () => {
 
                 <div>
                     {!quizStarted && <QuizStartComponent setQuizStarted={setQuizStarted} fetchNextQuestion={fetchNextQuestion}/>}
-                    {quizStarted && (quizComplete ? <QuizResultComponent result={engine.result()}/> : currentQuestion && <QuizQuestionComponent currentQuestion={currentQuestion} handleAnswerSubmit={handleAnswerSubmit}/>)}
+                    {quizStarted && (quizComplete ? <QuizResultComponent result={engine.result().data} additionalInfo={engine.result().additionalInfo}/> : currentQuestion && <QuizQuestionComponent currentQuestion={currentQuestion} handleAnswerSubmit={handleAnswerSubmit}/>)}
                 </div>
             </div>
         </>
