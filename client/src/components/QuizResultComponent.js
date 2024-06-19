@@ -1,4 +1,5 @@
 import ImageCropper from './ImageCropper';
+import PseudoFactoryMethod from './PseudoCodes/FactoryMethod';
 import {Akinator} from './AkinatorComponent';
 
 export default function QuizResultComponent({result, additionalInfo}) {
@@ -12,30 +13,33 @@ export default function QuizResultComponent({result, additionalInfo}) {
             alignItems: "center",
             position: "relative",
         }}>
+            {/**/}
+            {/* <div style={{ */}
+            {/*     width: '400px', */}
+            {/*     height: '700px', */}
+            {/*     top: '0px',    // Adjust top position */}
+            {/*     left: '0px',  // Adjust right position */}
+            {/**/}
+            {/*     backgroundColor: 'green', */}
+            {/*     color: "white",  */}
+            {/*     // display: "flex",   */}
+            {/*     // flexDirection: "column",   */}
+            {/*     // alignItem: "center",   */}
+            {/*     // justifyContent: "center",   */}
+            {/*     margin: "10px", */}
+            {/*     position: "absolute", */}
+            {/*     // position: 'absolute',  // Position absolutely for precise placement */}
+            {/*     // //top: '50px',    // Adjust top position */}
+            {/* }}> */}
+            {/*     {/* <h2>THIS IS PSEUDO OF OF THE PATTERN</h2> */} */}
+            {/*     <div> */}
+            {/*     <PseudoFactoryMethod/> */}
+            {/*     </div> */}
+            {/* </div> */}
 
             <div style={{
-                width: '400px',
-                height: '700px',
-                top: '0px',    // Adjust top position
-                left: '0px',  // Adjust right position
-
-                backgroundColor: 'green',
-                color: "white", 
-                display: "flex",  
-                flexDirection: "column",  
-                alignItem: "center",  
-                justifyContent: "center",  
-                margin: "10px",
-                position: "absolute",
-                // position: 'absolute',  // Position absolutely for precise placement
-                // //top: '50px',    // Adjust top position
-            }}>
-                <h2>THIS IS PSEUDO OF OF THE PATTERN</h2>
-            </div>
-
-            <div style={{
-                width: '500px',
-                height: '450px',
+                width: '600px',
+                height: '500px',
                 backgroundColor: 'green',
                 color: "white", 
                 display: "flex",  
@@ -44,25 +48,17 @@ export default function QuizResultComponent({result, additionalInfo}) {
                 justifyContent: "center",  
                 margin: "10px", 
                 position: "relative",
+                //overflow: "hidden",
                 // position: 'absolute',  // Position absolutely for precise placement
                 // //top: '50px',    // Adjust top position
                 // top: '0px',    // Adjust top position
                 // left: '50px',  // Adjust right position
             }}>
-                <ImageCropper
-                    style={{
-                        position: "absolute", 
-                        top: '0',
-                    }}
-                src={additionalInfo.diagram}
-                alt="Image to crop"
-                x={0}
-                y={0}
-                width={1000}
-                height={1000}
-                // invertVerticalAxis={true}
-                />
-                {/* <h2>THIS IS THE UML DIAGRAM</h2> */}
+                <img style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'contain',
+                }}src={additionalInfo.diagram} alt="diagram"/>
             </div>
 
             <div style={{

@@ -80,8 +80,8 @@ const QuizComponent = () => {
                 alt="Image to crop"
                 x={0}
                 y={0}
-                width={1920}
-                height={800}
+                width={window.innerWidth}
+                height={window.innerHeight}
                 />
 
                 <div>

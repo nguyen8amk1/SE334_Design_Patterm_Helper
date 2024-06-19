@@ -63,8 +63,8 @@ class DesignPatternEngine {
         
         // TODO: @Duplication0
         // 1. choose a random edge
-        const randomNodeId = randRange(1, 3); 
-        //const randomNodeId = 1;
+        //const randomNodeId = randRange(1, 3); 
+        const randomNodeId = 1;
         const edge = this.questionsGraph.edges.find(e => e.fromNode.id === this.currentNode.id && e.toNode.id === randomNodeId);
 
         // 1.1. Go to edge the end node 
@@ -104,7 +104,8 @@ class DesignPatternEngine {
             this.currentNode = this.questionsGraph.getNode(this.startNodeId);
 
             // TODO: remove this duplication with the upper @Duplication1 
-            const randomNodeId = randRange(1, 3); 
+            //const randomNodeId = randRange(1, 3); 
+            const randomNodeId = 1; 
             const edge = this.questionsGraph.edges.find(e => e.fromNode.id === this.currentNode.id && e.toNode.id === randomNodeId);
 
             this.currentNode = edge.toNode;

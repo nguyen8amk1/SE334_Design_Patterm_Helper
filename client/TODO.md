@@ -29,7 +29,7 @@ Make better ui [] (2h)
             5. The pseudo code on the left [X]
 
         Collect the result information []
-            pseudo code [] @Current
+            pseudo code [] @Later
             uml diagram [X] 
                 Connect the uml diagram to the ui [] 
                     Put the image link into the node [X] 
@@ -38,6 +38,8 @@ Make better ui [] (2h)
 
         with the image as the UML diagram from refactoring guru (https://refactoring.guru/images/patterns/diagrams/abstract-factory/example.png)
         pseudo code on the right side 
+
+    Make better question and answer block [] @Current 
 
 Make the questions visualization animations gifs [] @Later
     reference: https://opensource.com/article/19/7/understanding-software-design-patterns

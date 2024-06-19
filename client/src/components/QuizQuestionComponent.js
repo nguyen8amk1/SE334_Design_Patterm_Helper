@@ -17,8 +17,13 @@ export default function QuizQuestionComponent({currentQuestion, handleAnswerSubm
 
     return (
         <>
-            <h1 className="logo-text">DESIGN PATTERN GUESSER</h1>
-            <div className="question">
+            <div style={{
+                padding: "2em",
+            }}className="question">
+                <h1 style={{
+                    margin: 0,
+                    marginBottom: '1em',
+                }}className="logo-text">DESIGN PATTERN GUESSER</h1>
                 <div style={{
                     width: '500px',
                     height: '300px',
@@ -59,7 +64,7 @@ export default function QuizQuestionComponent({currentQuestion, handleAnswerSubm
                     // height: '400px',  // Adjust height as needed
                     // backgroundColor: '#3498db',  // Big blue rectangle color
                     position: 'absolute',  // Position absolutely for precise placement
-                    top: '-80px',    // Adjust top position
+                    top: '0px',    // Adjust top position
                     right: '70px',  // Adjust right position
                     color: "white",
                 }}
