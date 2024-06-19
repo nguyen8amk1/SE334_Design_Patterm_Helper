@@ -40,8 +40,8 @@ export default function QuizResultComponent({result, additionalInfo}) {
             <div style={{
                 width: '600px',
                 height: '500px',
-                backgroundColor: 'green',
-                color: "white", 
+                backgroundColor: '#f6f8f8', 
+                color: "black", 
                 display: "flex",  
                 flexDirection: "column",  
                 alignItem: "center",  
@@ -64,8 +64,8 @@ export default function QuizResultComponent({result, additionalInfo}) {
             <div style={{
                 width: '500px',
                 height: '200px',
-                backgroundColor: 'green',
-                color: "white", 
+                backgroundColor: '#f6f8f8',
+                color: "black", 
                 display: "flex",  
                 flexDirection: "column",  
                 alignItem: "center",  

@@ -25,14 +25,15 @@ export default function QuizQuestionComponent({currentQuestion, handleAnswerSubm
                     marginBottom: '1em',
                 }}className="logo-text">DESIGN PATTERN GUESSER</h1>
                 <div style={{
-                    width: '500px',
-                    height: '300px',
-                    backgroundColor: 'green',
-                    color: "white", 
+                    width: '600px',
+                    height: '500px',
+                    backgroundColor: '#f6f8f8',
+                    color: "black", 
                     display: "flex",  
                     flexDirection: "column",  
                     alignItem: "center",  
                     justifyContent: "center",  
+                    fontSize: "1.5em",
                 }}>{currentQuestion.question}</div>
 
 

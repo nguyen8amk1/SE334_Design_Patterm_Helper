@@ -39,7 +39,11 @@ Make better ui [] (2h)
         with the image as the UML diagram from refactoring guru (https://refactoring.guru/images/patterns/diagrams/abstract-factory/example.png)
         pseudo code on the right side 
 
-    Make better question and answer block [] @Current 
+    Make better question and answer block [X] 
+
+    Make better questions [] @Current
+        reference: https://preview.redd.it/eyiqu9l3n6p81.png?width=1790&format=png&auto=webp&s=20d0d94635fea4d6dc4410c381ff8ae66f92e699
+    Adding emotion system to the akinator [] @Next
 
 Make the questions visualization animations gifs [] @Later
     reference: https://opensource.com/article/19/7/understanding-software-design-patterns
