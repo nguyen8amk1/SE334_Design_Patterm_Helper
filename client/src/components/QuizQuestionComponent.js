@@ -17,7 +17,7 @@ export default function QuizQuestionComponent({currentQuestion, handleAnswerSubm
 
     return (
         <>
-            <h1>DESIGN PATTERN GUESSER</h1>
+            <h1 className="logo-text">DESIGN PATTERN GUESSER</h1>
             <div className="question">
                 <div style={{
                     width: '500px',

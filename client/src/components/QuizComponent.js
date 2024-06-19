@@ -68,6 +68,7 @@ const QuizComponent = () => {
 
     const backgroundStyle = {
         position: "absolute",
+        zIndex: '-1',
     }
 
     return (

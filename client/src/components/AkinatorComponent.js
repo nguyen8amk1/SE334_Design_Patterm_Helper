@@ -10,9 +10,9 @@ export function Akinator({style, emotion}) {
     const frameX = frameInfo.u*frameWidth;
     const frameY = frameInfo.v*frameHeight;
 
-    const newframeX = frameX+120;
+    const newframeX = frameX+80;
     const newframeY = frameY+250;
-    const newframeWidth = frameWidth-200;
+    const newframeWidth = frameWidth-160;
     const newframeHeight = frameHeight-450;
 
     return (

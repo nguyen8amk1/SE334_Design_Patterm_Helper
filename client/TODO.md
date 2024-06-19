@@ -18,8 +18,18 @@ Make better ui [] (2h)
         reference: https://game24h.vn/huong-dan/wp-content/uploads/2021/04/Screenshot_15_1617783693.jpg
             **LIKE THIS IMAGE BUT WITH TEXT AS "DESIGN PATTERN GUESSER"**
 
-    Make better result page [] (2h) @Current
+    Make better result page [] (2h) 
         reference: https://imgt.taimienphi.vn/cf/Images/lo/2018/2/23/cach-choi-akinator-game-than-den-doan-suy-nghi-3.jpg
+        What we need to show, stub: 
+            1. An UML Diagram in the top middle [X] 
+            2. A block of answer in the  bottom middle [X]
+            3. An akinator on the right (exactly the place before) [X]
+            4. A retry button in the bottom [X]
+                We will change to yes no in the next iteration 
+            5. The pseudo code on the left [X]
+
+        Collect the result information [] @Current
+
         with the image as the UML diagram from refactoring guru (https://refactoring.guru/images/patterns/diagrams/abstract-factory/example.png)
         pseudo code on the right side 
 
