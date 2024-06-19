@@ -4,6 +4,7 @@ import {DesignPatternAnimation} from './DesignPatternAnimationComponent';
 export default function QuizQuestionComponent({currentQuestion, handleAnswerSubmit}) {
     // TODO: display the questions inside a rectangle block like akinator
     // With animation on the left or right
+
     return (
         <div className="question">
             <div style={{

@@ -4,11 +4,12 @@ Deploy the app on netlify
 
 
 # TODO
-Make better ui [] (2h) @Current
-    This one looks great: https://codepen.io/about7codes/pen/rNWmGNW
-    Make design pattern animation and akinator sprite relative to the question
+Use proper questions [] (1h) @Current
 
-Use proper questions [] (1h) @Next
+Make better ui [] (2h) @Next
+    This one looks great: https://codepen.io/about7codes/pen/rNWmGNW
+    Make design pattern animation and akinator sprite relative to the question [] @Current
+
 
 
 ## Design pattern exercise to test the system
