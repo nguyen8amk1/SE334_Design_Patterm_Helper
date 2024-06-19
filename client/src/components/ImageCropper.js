@@ -45,9 +45,9 @@ class ImageCropper extends React.Component {
     }
 
     render() {
-        const { src, alt } = this.props;
+        const { src, alt, style } = this.props;
         return (
-            <div className="crop-wrapper">
+            <div style={style}className="crop-wrapper">
                 <div className="crop-container" ref={this.cropContainerRef}>
                     <img id="image" src={src} alt={alt} ref={this.imageRef} />
                 </div>

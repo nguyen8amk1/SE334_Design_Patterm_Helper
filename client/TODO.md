@@ -10,15 +10,15 @@ Make the high level questions transition better (i got failed a lot) [] (1h) @La
 
 Make better ui [] (2h)
     This one looks great: https://codepen.io/about7codes/pen/rNWmGNW
-    Make design pattern animation and akinator sprite relative to the question [] @Current
+    Make design pattern animation and akinator sprite relative to the question [X] 
     Make the questions block looks better [] 
-    Make better start page [] (2h) []
+    Make better start page [] (2h) [X]
         With akinator in the front page  
         With text  
         reference: https://game24h.vn/huong-dan/wp-content/uploads/2021/04/Screenshot_15_1617783693.jpg
             **LIKE THIS IMAGE BUT WITH TEXT AS "DESIGN PATTERN GUESSER"**
 
-    Make better result page [] (2h) []
+    Make better result page [] (2h) @Current
         reference: https://imgt.taimienphi.vn/cf/Images/lo/2018/2/23/cach-choi-akinator-game-than-den-doan-suy-nghi-3.jpg
         with the image as the UML diagram from refactoring guru (https://refactoring.guru/images/patterns/diagrams/abstract-factory/example.png)
         pseudo code on the right side 

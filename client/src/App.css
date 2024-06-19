@@ -41,6 +41,7 @@
     display: flex;
     flex-direction: column;
     align-items: center; 
+    position: relative;
 }
 
 .question p{
@@ -93,3 +94,42 @@
     background-color: #FF6656;
 }
 
+
+/* Akinator background style */
+.akinator-background {
+    background: #3a2e48; /* Fallback color */
+    background: linear-gradient(135deg, #554075 0%, #3a2e48 100%);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+/* For the pattern effect */
+.akinator-pattern {
+    position: relative;
+    z-index: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 5px
+    );
+}
+
+.div-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.div-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: url('pattern.png'); /* Add pattern image if needed */
+    opacity: 0.05; /* Adjust opacity for pattern visibility */
+    pointer-events: none;
+}

@@ -4,6 +4,7 @@ import QuizResultComponent from './QuizResultComponent';
 import QuizQuestionComponent from './QuizQuestionComponent';
 import {DesignPatternEngine, graphFromJSON} from '../services/engine';
 import {graphJSON} from '../services/brain';
+import ImageCropper from "./ImageCropper";
 
 // Sample quiz questions
 const quizQuestions = [
@@ -61,12 +62,31 @@ const QuizComponent = () => {
         await fetchNextQuestion();
     };
 
+    const style ={
+        position: "relative",
+    };
+
+    const backgroundStyle = {
+        position: "absolute",
+    }
+
     return (
         <>
-            <h1>DESIGN PATTERN GUESSER</h1>
-            <div>
-                {!quizStarted && <QuizStartComponent setQuizStarted={setQuizStarted} fetchNextQuestion={fetchNextQuestion}/>}
-                {quizStarted && (quizComplete ? <QuizResultComponent result={engine.result()}/> : currentQuestion && <QuizQuestionComponent currentQuestion={currentQuestion} handleAnswerSubmit={handleAnswerSubmit}/>)}
+            <div style={{style}}>
+                <ImageCropper
+                    style={backgroundStyle}
+                src={"/akinatorbackground.jpg"}
+                alt="Image to crop"
+                x={0}
+                y={0}
+                width={1920}
+                height={800}
+                />
+
+                <div>
+                    {!quizStarted && <QuizStartComponent setQuizStarted={setQuizStarted} fetchNextQuestion={fetchNextQuestion}/>}
+                    {quizStarted && (quizComplete ? <QuizResultComponent result={engine.result()}/> : currentQuestion && <QuizQuestionComponent currentQuestion={currentQuestion} handleAnswerSubmit={handleAnswerSubmit}/>)}
+                </div>
             </div>
         </>
     );

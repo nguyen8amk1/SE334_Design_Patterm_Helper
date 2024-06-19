@@ -1,3 +1,5 @@
+import ImageCropper from './ImageCropper';
+
 export default function QuizResultComponent({result}) {
     return (
         <div>
